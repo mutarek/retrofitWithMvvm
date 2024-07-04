@@ -9,9 +9,16 @@
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+       android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:listitem="@layout/sample_layout"
         android:id="@+id/recyllerview"/>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progressBar"/>
 
 </LinearLayout>
