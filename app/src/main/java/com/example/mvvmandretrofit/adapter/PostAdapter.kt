@@ -23,15 +23,15 @@ class PostAdapter(var postList: PostsModel) : RecyclerView.Adapter<PostAdapter.P
         holder.tvTitle.text = postList[position].title
         holder.tvBody.text = postList[position].body
 
-//        holder.itemView.setOnClickListener {
-//
-//        }
-//        holder.itemView.setOnLongClickListener {
-//            val position = holder.adapterPosition
-//            postList.removeAt(position)
-//            notifyItemRemoved(position)
-//            true
-//        }
+        holder.itemView.setOnClickListener {
+
+        }
+        holder.itemView.setOnLongClickListener {
+            val position = holder.adapterPosition
+            postList.removeAt(position)
+            notifyItemRemoved(position)
+            true
+        }
     }
 
     override fun getItemCount(): Int {
