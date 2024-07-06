@@ -26,12 +26,12 @@ class PostAdapter(var postList: PostsModel) : RecyclerView.Adapter<PostAdapter.P
         holder.itemView.setOnClickListener {
 
         }
-        holder.itemView.setOnLongClickListener {
-            val position = holder.adapterPosition
-            postList.removeAt(position)
-            notifyItemRemoved(position)
-            true
-        }
+//        holder.itemView.setOnLongClickListener {
+//            val position = holder.adapterPosition
+//            postList.removeAt(position)
+//            notifyItemRemoved(position)
+//            true
+//        }
     }
 
     override fun getItemCount(): Int {
